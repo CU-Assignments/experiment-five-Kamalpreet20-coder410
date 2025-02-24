@@ -1,0 +1,24 @@
+//Easy level
+import java.util.*;
+
+public class AutoBoxingExample {
+    public static void main(String[] args) {
+        List<Integer> numbers = Arrays.asList(10, 20, 30, 40, 50);
+
+        // Autoboxing: Converting int to Integer
+        int sum = 0;
+        for (Integer num : numbers) {
+            sum += num; // Unboxing: Integer to int
+        }
+
+        System.out.println("Sum of numbers: " + sum);
+
+        // Parsing Strings to Wrapper Classes
+        String numStr = "100";
+        Integer parsedInt = Integer.parseInt(numStr);
+        Double parsedDouble = Double.parseDouble("45.67");
+
+        System.out.println("Parsed Integer: " + parsedInt);
+        System.out.println("Parsed Double: " + parsedDouble);
+    }
+}
